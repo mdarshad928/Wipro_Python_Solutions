@@ -1,0 +1,7 @@
+This is an IO helper file.
+We will use this file to complete the hands-on.
+There are total of 6 hands-on in this capsule.
+
+$$$$$
+
+I am going to upload it on Github.
