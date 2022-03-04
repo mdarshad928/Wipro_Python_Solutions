@@ -1,3 +1,4 @@
+# Write a Program to create a list of a 5 Integer and display the list item access element through element.
 MyFirstList = [23, 45, 12, 66, 49]
 
 print("List of Five Elements: ", MyFirstList)
