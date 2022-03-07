@@ -4,7 +4,7 @@ def sumOfPowerOfDigits(input1: int):
   while input1>0:
     output += pow(input1%10, ld)
     ld = input1 % 10
-    output //= 10
+    input1 //= 10
   return output
 if __name__ == "__main__":
   print(sumOfPowerOfDigits(582109))
