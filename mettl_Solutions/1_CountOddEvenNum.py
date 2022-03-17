@@ -18,7 +18,7 @@ def OddEveSum(input1: int, input2: int, input3: int, input4: int, input5: int, i
     if input6.lower() == "odd":
         return (count)
     if input6.lower() == "even":
-        return (totalInp - count)
+        return (totalInp - count) 
     #Pastable code ends here
 
 if __name__ == "__main__":
