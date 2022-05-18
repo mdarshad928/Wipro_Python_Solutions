@@ -1,3 +1,17 @@
+def insertionSort(arr):
+  for i in range(1, len(arr)):
+    value = arr[i]
+    hole = i
+    while hole>0 and arr[hole-1]>value:
+      arr[hole] = arr[hole-1]
+      hole -= 1
+    arr[hole] = value
+  return arr
+
+if __name__ == '__main__':
+  print(insertionSort([7, 2, 4, 5, 3]))
+
+
 # x = 'wipro'
 # y = 12                            # Variable naming         
 # # b = False
@@ -222,3 +236,87 @@
 
 # *************** Module & Package **********************
   # Function, Class
+# def calculate(input1, input2, input3):
+  
+  
+#   v1 = 0
+#   v2 = 0
+#   for i in str(input2):
+#     v1 += int(i)**2
+#   for i in str(input3):
+#     v2 += int(i)
+#   v3 = v1**v2
+#   v4 = v3**input1
+#   return v4//2
+
+
+
+# print(calculate(1,2,4))
+# def solution(input1):
+#   o = 0
+#   e = 0
+#   for string in input1:
+#     ln = len(input1)
+
+
+
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# plt.style.use('seaborn-darkgrid')
+# import yfinance as yf
+
+# #print(dir(pd))
+# #print(dir(plt))
+
+# aapl_df = yf.download('TSLA', 
+#                       start='2011-01-01', 
+#                       end='2021-12-31', 
+#                       progress=False,
+# )
+# aapl_df.head()
+# aapl_df['Close'].plot(title="Tesla's stock price")
+
+
+
+
+
+# import os
+# import re
+
+# path = input("Enter the path: ")
+# if path==".":
+#     path = os.getcwd()
+# pathFiles = os.listdir(path)
+# desiredFiles = []
+# filename_with_filesize = {}
+
+# for files in pathFiles:
+#     if re.search("^[A-Z].*\.txt$", files): 
+#         size = os.stat(path+"/"+files)
+#         print(size.st_size)
+#         KBsize = int(size.st_size)/1024
+#         filename_with_filesize[files] = KBsize
+#         desiredFiles.append(files)
+
+
+# detailStore = {"0 - 100 KB": 0, "101 - 500 KB": 0, "501 - 1000 KB": 0, "1001 - 1500 KB": 0 }
+# for key in filename_with_filesize:
+#     if filename_with_filesize[key]<101:
+#        detailStore["0 - 100 KB"] += 1
+#     if filename_with_filesize[key]>101 and filename_with_filesize<501:
+#        detailStore["101 - 500 KB"] += 1
+#     if filename_with_filesize[key]>501 and filename_with_filesize<1001:
+#        detailStore["501 - 1000 KB"] += 1
+#     if filename_with_filesize[key]>1001 and filename_with_filesize<1501:
+#        detailStore["1001 - 1500 KB"] += 1
+# print("size", "Count", sep  = "            ")
+# for i in detailStore:
+#     print(i, detailStore[i], sep = "        ")
+
+# sortDesc = (sorted(filename_with_filesize.items(), key= lambda x:x[1], reverse = True))
+# print("#", "File Name", "File Size", sep = "          ")
+# x = 1
+# for i in sortDesc:
+#   print(x, i[0], f"{i[1]} KB", sep = "          ")
+#   x += 1
